@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body {
+  background: hsl(217deg, 54%, 11%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 96vh;
+}
+main section {
+  height: 570px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 12px;
+}
+main section .first-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .first-part img {
+  position: relative;
+  width: 300px;
+  border-radius: 12px;
+}
+main section .first-part .hover {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .first-part .hover span {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  display: block;
+  background-color: hsl(178deg, 100%, 50%);
+  border-radius: 12px;
+  opacity: 0;
+  cursor: pointer;
+}
+main section .first-part .hover span:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+main section .first-part .hover .view {
+  position: absolute;
+  width: 50px;
+  cursor: pointer;
+  opacity: 0;
+}
+main section .first-part .hover span:hover + .view {
+  opacity: 1;
+}
+
+main section .first-part h1 {
+  align-self: flex-start;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px 15px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+main section .first-part h1:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+main section .first-part h2 {
+  color: hsl(215deg, 51%, 70%);
+  padding: 0px 15px;
+  font-weight: 300;
+}
+main section .second-part {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+}
+main section .second-part .currency {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+main section .second-part .currency h1 {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
+}
+main section .second-part .time-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+main section .second-part .time-left h2 {
+  font-weight: 300;
+  color: hsl(215deg, 51%, 70%);
+}
+main section .credits {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 20px 0 0 0;
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+}
+main section .credits img {
+  width: 40px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+}
+main section .credits p {
+  font-size: 14px;
+  font-weight: 300;
+  color: hsl(215deg, 51%, 70%);
+}
+main section .credits p span {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+main section .credits p span:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+footer p {
+  color: hsl(0deg, 0%, 100%);
+}
+footer a {
+  color: aqua;
+}/*# sourceMappingURL=styles.css.map */
